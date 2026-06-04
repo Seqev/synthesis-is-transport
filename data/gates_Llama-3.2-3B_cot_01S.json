@@ -1,0 +1,66 @@
+{
+  "model": "meta-llama/Llama-3.2-3B",
+  "mode": "cot",
+  "N": 4096,
+  "K": 3,
+  "n": 60,
+  "gateset": "01S",
+  "gate0": {
+    "abl_AB": {
+      "acc": 0.18333333333333332,
+      "drop": 0.43333333333333335,
+      "ci": [
+        0.3,
+        0.5666666666666667
+      ],
+      "causal": true
+    },
+    "abl_BC": {
+      "acc": 0.1,
+      "drop": 0.5166666666666667,
+      "ci": [
+        0.38333333333333336,
+        0.65
+      ],
+      "causal": true
+    },
+    "abl_CD": {
+      "acc": 0.0,
+      "drop": 0.6166666666666667,
+      "ci": [
+        0.48333333333333334,
+        0.7333333333333333
+      ],
+      "causal": true
+    },
+    "baseline_acc": 0.6166666666666667,
+    "ALL_CAUSAL": true
+  },
+  "gate1": {
+    "baseline": 0.6166666666666667,
+    "D1_deliverD": 0.5666666666666667,
+    "D2_trueB": 0.6333333333333333,
+    "D2_fully_substitutes": false,
+    "corr_AB": {
+      "n_basecorrect": 37,
+      "flip_rate": 0.7297297297297297,
+      "follow_false_rate": 0.3783783783783784
+    },
+    "corr_BC": {
+      "n_basecorrect": 37,
+      "flip_rate": 0.8378378378378378,
+      "follow_false_rate": 0.8108108108108109
+    },
+    "corr_CD": {
+      "n_basecorrect": 37,
+      "flip_rate": 1.0,
+      "follow_false_rate": 0.7027027027027027
+    }
+  },
+  "decoy_sweep": {
+    "DEC0": 0.6166666666666667,
+    "DEC3": 0.65,
+    "DEC6": 0.5666666666666667,
+    "DEC10": 0.5833333333333334
+  }
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Even Synthesis Is Transport: At 3B, Implicit Multi-Hop Reasoning Reduces to Retrieval-and-Elimination, and Composition Appears Only as Externalized Self-Delivery"
+type: article
+authors:
+  - family-names: "Vyaltsev"
+    given-names: "Evgenii"
+    orcid: "https://orcid.org/0009-0004-3712-6798"
+  - family-names: "Vyaltsev"
+    given-names: "Daniil"
+date-released: 2026-06-03
+keywords:
+  - multi-hop reasoning
+  - chain-of-thought
+  - mechanistic interpretability
+  - latent reasoning
+  - retrieval
+  - matched controls
+  - process of elimination
+license: CC-BY-4.0
+abstract: >
+  Synthesis is the adversarial case for a transport account of LLM behaviour: in an
+  A->B->C->D chain the answer D is absent and must be assembled. Pre-registered and
+  cross-model (Llama-3.2-3B, Qwen2.5-3B), implicit multi-hop reasoning reduces to
+  retrieval-and-elimination: corrupting the middle hop flips correct answers in only
+  5-11% of cases while corrupting the code fact flips 100%, masking link facts at the
+  answer step is inert, and blocking elimination with decoys floors accuracy to
+  chance. Explicit chain-of-thought traverses genuinely (a positive control: 84-90%
+  middle-hop flip) but only by writing each hop into context and re-reading it
+  (self-delivery), not by internal decode-time binding. A methodological catch: node
+  removal is confounded by elimination under competition; in-place corruption is the
+  faithful usage test. At 3B, internal multi-hop computation of an absent fact does
+  not occur; composition appears only as externalized self-delivery.

@@ -1,0 +1,129 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "mode": "implicit",
+  "N": 4096,
+  "K": 3,
+  "n": 60,
+  "gateset": "012S",
+  "gate0": {
+    "abl_AB": {
+      "acc": 0.26666666666666666,
+      "drop": 0.18333333333333332,
+      "ci": [
+        0.05,
+        0.31666666666666665
+      ],
+      "causal": true
+    },
+    "abl_BC": {
+      "acc": 0.4,
+      "drop": 0.05,
+      "ci": [
+        -0.016666666666666666,
+        0.11666666666666667
+      ],
+      "causal": false
+    },
+    "abl_CD": {
+      "acc": 0.0,
+      "drop": 0.45,
+      "ci": [
+        0.3333333333333333,
+        0.5833333333333334
+      ],
+      "causal": true
+    },
+    "baseline_acc": 0.45,
+    "ALL_CAUSAL": false
+  },
+  "gate1": {
+    "baseline": 0.45,
+    "D1_deliverD": 0.9666666666666667,
+    "D2_trueB": 0.43333333333333335,
+    "D2_fully_substitutes": false,
+    "corr_AB": {
+      "n_basecorrect": 27,
+      "flip_rate": 0.07407407407407407,
+      "follow_false_rate": 0.07407407407407407
+    },
+    "corr_BC": {
+      "n_basecorrect": 27,
+      "flip_rate": 0.1111111111111111,
+      "follow_false_rate": 0.037037037037037035
+    },
+    "corr_CD": {
+      "n_basecorrect": 27,
+      "flip_rate": 1.0,
+      "follow_false_rate": 0.8518518518518519
+    }
+  },
+  "gate2": {
+    "full": 0.45,
+    "abl_AB": 0.43333333333333335,
+    "abl_BC": 0.45,
+    "abl_CD": 0.0,
+    "abl_CTRL": 0.45,
+    "abl_AB_vs_full": {
+      "d": 0.016666666666666666,
+      "ci": [
+        0.0,
+        0.05
+      ],
+      "dies": false
+    },
+    "abl_BC_vs_full": {
+      "d": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "dies": false
+    },
+    "abl_CD_vs_full": {
+      "d": 0.45,
+      "ci": [
+        0.3333333333333333,
+        0.5833333333333334
+      ],
+      "dies": true
+    },
+    "abl_CTRL_vs_full": {
+      "d": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "dies": false
+    },
+    "AB_decode_needed": {
+      "d": 0.016666666666666666,
+      "ci": [
+        0.0,
+        0.05
+      ],
+      "needed": false
+    },
+    "BC_decode_needed": {
+      "d": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "needed": false
+    },
+    "CD_decode_needed": {
+      "d": 0.45,
+      "ci": [
+        0.3333333333333333,
+        0.5833333333333334
+      ],
+      "needed": true
+    }
+  },
+  "decoy_sweep": {
+    "DEC0": 0.45,
+    "DEC3": 0.21666666666666667,
+    "DEC6": 0.15,
+    "DEC10": 0.1
+  }
+}
